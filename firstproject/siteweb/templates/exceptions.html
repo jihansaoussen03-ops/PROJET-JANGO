@@ -1,0 +1,86 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Exceptions</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+
+        <a class="navbar-brand" href="/">
+            🐍 Projet Django
+        </a>
+
+        <div class="navbar-nav ms-auto">
+            <a class="nav-link" href="/">Accueil</a>
+            <a class="nav-link" href="/simulation/">Simulation</a>
+            <a class="nav-link" href="/exceptions/">Exceptions</a>
+            <a class="nav-link" href="/poo/">POO</a>
+        </div>
+
+    </div>
+</nav>
+
+<div class="container mt-5">
+
+<div class="card shadow">
+<div class="card-body">
+
+<h1>⚠️ Gestion des Exceptions</h1>
+
+<p>
+Les exceptions permettent d'éviter l'arrêt brutal d'un programme.
+</p>
+
+<pre>
+try:
+    x = 10 / 0
+except ZeroDivisionError:
+    print("Erreur")
+</pre>
+
+</div>
+</div>
+
+<div class="card shadow mt-4">
+<div class="card-body">
+
+<h3>Tableau des exceptions</h3>
+
+<table class="table table-striped">
+
+<tr>
+<th>Exception</th>
+<th>Description</th>
+</tr>
+
+<tr>
+<td>ZeroDivisionError</td>
+<td>Division par zéro</td>
+</tr>
+
+<tr>
+<td>ValueError</td>
+<td>Valeur incorrecte</td>
+</tr>
+
+<tr>
+<td>TypeError</td>
+<td>Type incompatible</td>
+</tr>
+
+</table>
+
+</div>
+</div>
+
+</div>
+
+</body>
+</html>

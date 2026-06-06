@@ -1,0 +1,134 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Projet Django</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+
+        <a class="navbar-brand" href="/">
+            🐍 Projet Django
+        </a>
+
+        <div class="navbar-nav ms-auto">
+            <a class="nav-link" href="/">Accueil</a>
+            <a class="nav-link" href="/simulation/">Simulation</a>
+            <a class="nav-link" href="/exceptions/">Exceptions</a>
+            <a class="nav-link" href="/poo/">POO</a>
+        </div>
+
+    </div>
+</nav>
+
+<div class="container mt-5">
+
+    <div class="text-center mb-5">
+
+        <img src="https://www.python.org/static/community_logos/python-logo.png"
+             width="220">
+
+        <h1 class="display-3 mt-4">
+            Projet Django & Python
+        </h1>
+
+        <p class="lead">
+            Simulation des dés, Gestion des exceptions et POO
+        </p>
+
+    </div>
+
+    <div class="row">
+
+        <div class="col-md-4">
+            <div class="card shadow h-100">
+                <div class="card-body">
+
+                    <h3>🎲 Simulation</h3>
+
+                    <p>
+                        Simulation du lancer de deux dés
+                        et étude des probabilités.
+                    </p>
+
+                    <a href="/simulation/" class="btn btn-primary">
+                        Ouvrir
+                    </a>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card shadow h-100">
+                <div class="card-body">
+
+                    <h3>⚠️ Exceptions</h3>
+
+                    <p>
+                        Gestion des erreurs et exceptions
+                        en Python.
+                    </p>
+
+                    <a href="/exceptions/" class="btn btn-warning">
+                        Ouvrir
+                    </a>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card shadow h-100">
+                <div class="card-body">
+
+                    <h3>📚 POO</h3>
+
+                    <p>
+                        Découverte des classes,
+                        objets et attributs.
+                    </p>
+
+                    <a href="/poo/" class="btn btn-success">
+                        Ouvrir
+                    </a>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="card shadow mt-5">
+        <div class="card-body">
+
+            <h3>À propos du projet</h3>
+
+            <p>
+                Ce projet web a été développé avec Django et Python.
+                Il présente une simulation des dés, la gestion des
+                exceptions et les bases de la programmation orientée objet.
+            </p>
+
+            <p>
+                L'objectif est de mettre en pratique le framework Django
+                et d'illustrer plusieurs notions fondamentales de Python.
+            </p>
+
+        </div>
+    </div>
+
+</div>
+
+<footer class="bg-dark text-white text-center p-3 mt-5">
+    Projet réalisé avec Django & Python
+</footer>
+
+</body>
+</html>
