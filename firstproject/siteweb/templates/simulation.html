@@ -102,6 +102,33 @@
     </div>
 
 </div>
+<div class="card shadow mt-4">
+    <div class="card-body">
+
+        <h3>Historique des lancers</h3>
+
+        <table class="table table-striped">
+
+            <tr>
+                <th>N°</th>
+                <th>Dé 1</th>
+                <th>Dé 2</th>
+                <th>Résultat</th>
+            </tr>
+
+            {% for lancer in historique %}
+            <tr>
+                <td>{{ forloop.counter }}</td>
+                <td>{{ lancer.de1 }}</td>
+                <td>{{ lancer.de2 }}</td>
+                <td>{{ lancer.resultat }}</td>
+            </tr>
+            {% endfor %}
+
+        </table>
+
+    </div>
+</div>
 
 </body>
 </html>
